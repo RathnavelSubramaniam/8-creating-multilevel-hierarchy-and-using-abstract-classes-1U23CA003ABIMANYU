@@ -9,7 +9,7 @@ public Animal (String species, int age){
 public abstract void sound();
 
 public String toString(){
-   return "Species: " + species + "Age: " +age;
+   return "Species: " + species +", " +"Age: " +age;
 }
 public boolean equals(Object obj){
    if(this == obj) return true;
@@ -71,7 +71,7 @@ public static void main(String[] args) {
   System.out.println(eagle);
   System.out.println(talkingParrot);
 
-  System.out.println("Are liom and eagle equal??" +lion.equals(eagle));
-  System.out.println("Are liom and lion equal??" +lion.equals(new Mammal("Lion", 5, "Grasslands")));
+  System.out.println("Are lion and eagle equal? " +lion.equals(eagle));
+  System.out.println("Are lion and lion equal? " +lion.equals(new Mammal("Lion", 5, "Grasslands")));
 }
 }
